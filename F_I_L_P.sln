@@ -15,9 +15,11 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Задача5_5", "Зада
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Задача5_6", "Задача5_6\Задача5_6.fsproj", "{3C3C3278-E898-4F43-A854-4A4E689B843C}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Задача5_7", "Задача5_7\Задача5_7.fsproj", "{7EA3EEE3-1375-4543-B70E-9DCCF33803CA}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Задача5_7", "Задача5_7\Задача5_7.fsproj", "{7EA3EEE3-1375-4543-B70E-9DCCF33803CA}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Задача5_8", "Задача5_8\Задача5_8.fsproj", "{47C3D2F9-FCEC-43D1-89E8-EE158EB51FF8}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Задача5_8", "Задача5_8\Задача5_8.fsproj", "{47C3D2F9-FCEC-43D1-89E8-EE158EB51FF8}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Задача5_9", "Задача5_9\Задача5_9.fsproj", "{3F9594DE-BF69-4294-9558-B51638DEF4E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{47C3D2F9-FCEC-43D1-89E8-EE158EB51FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47C3D2F9-FCEC-43D1-89E8-EE158EB51FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47C3D2F9-FCEC-43D1-89E8-EE158EB51FF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F9594DE-BF69-4294-9558-B51638DEF4E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9594DE-BF69-4294-9558-B51638DEF4E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F9594DE-BF69-4294-9558-B51638DEF4E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F9594DE-BF69-4294-9558-B51638DEF4E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
