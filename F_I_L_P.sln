@@ -33,6 +33,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Задача5_14", "Зад�
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Задача5_15", "Задача5_15\Задача5_15.fsproj", "{05AC76F8-810C-450B-BD05-D2B2F71C68CD}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Задача5_16", "Задача5_16\Задача5_16.fsproj", "{C663315A-5E03-4212-BB03-A048C5B51D3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{05AC76F8-810C-450B-BD05-D2B2F71C68CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05AC76F8-810C-450B-BD05-D2B2F71C68CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05AC76F8-810C-450B-BD05-D2B2F71C68CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C663315A-5E03-4212-BB03-A048C5B51D3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C663315A-5E03-4212-BB03-A048C5B51D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C663315A-5E03-4212-BB03-A048C5B51D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C663315A-5E03-4212-BB03-A048C5B51D3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
