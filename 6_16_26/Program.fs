@@ -8,8 +8,7 @@ let min_in list min =
         |(h:int)::t ->
             let new_ind = min_i + 1
             if h = min then  new_ind::(min_in1 t min new_ind) else min_in1 t min new_ind
-    min_in1 list min 0
- 
+    min_in1 list min 0 
  
  //считает количество элементов между минимумами
 let vichet list = 
