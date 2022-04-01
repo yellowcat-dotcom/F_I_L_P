@@ -18,8 +18,6 @@ let readArray n =
 let writeArray arr =
     printfn "%A" arr
 
-
-
 [<EntryPoint>]
 let main argv =
     System.Console.WriteLine("Кол-во элементов в массиве 1:")
@@ -30,4 +28,9 @@ let main argv =
     let n2 = Console.ReadLine() |> Int32.Parse
     System.Console.WriteLine("Массив 2:")
     let arr2 = readArray n2
+    let cislo1 = arr1|> Array.reduce (fun a b -> a * 10 + b)  
+    let cislo2 = arr2|> Array.reduce (fun a b -> a * 10 + b)   
+    System.Console.WriteLine("Массив1 как число {0}    Массив2 как число{1}   Ответ {2} ",cislo1, cislo2, cislo1-cislo2)
+   
+    
     0
