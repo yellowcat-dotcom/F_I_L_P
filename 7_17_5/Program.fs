@@ -11,12 +11,23 @@ let kol_del x =
             kol_del1 x new_del new_sum
     kol_del1 x x 0
 
+//умножение на число
+let mult list value =
+    List.map (fun x -> x * value) list
+
+// строит список из перемножений всех элементов
+let rec testMult list =
+    match list with
+    |[]->[]
+    | a::b::[] -> [a;b;(a * b)]
+    | a::t -> [a]@(testMult t)@(mult (testMult t) a)
+
 [<EntryPoint>]
 let main argv =
     let l=Program.readData
     //List.distinct-позволяет cтроить список без повторений элементов
     let prostoy_l = List.distinct(List.filter (fun x -> kol_del x = 2) l)
-    //List.scan (fun x y -> x * y) 0 prostoy_l
-
-    Program.writelist prostoy_l
+     
+    let i = testMult prostoy_l
+    Program.writelist i
     0 
