@@ -11,17 +11,35 @@ let F1 str =
         let transposition = (List.sortBy(fun _ -> rnd.Next(0, len-1)) order)
         String.init len (fun idx -> str.[transposition.[idx]].ToString())
    
+(*let R f =
+    if f = true then let (t:string) ="Является полиндромом" 
+        else let (t:string) ="Не является полиндромом"*)
 
+let F2 str =
+    let rec F21 (str:string) (natchalo:int) (konets:int) (kol:int) (f:bool)=
+        if kol = (String.length str-1) then if f= true then ("Является") else ("Не является")
+        else
+            if str.[natchalo] = str.[konets] then
+                let nn = natchalo+1
+                let kk = konets-1
+                let kolkol = kol+1
+                F21 str nn kk kolkol f            
+            else 
+                let new_f = false
+                let nn = natchalo+1
+                let kk = konets-1
+                let kolkol = kol+1
+                F21 str nn kk kolkol new_f
+    F21 str 0 (String.length str-1) 0 true
 
 
 //let F3 str =
   
-let menu (n:int) (str:string) = 
-    match n with
-    | 1 -> F1 str
-    | 2 -> F2 str
+let menu = function    
+    | 1 -> F1 
+    | 2 -> F2
    // | 3 -> F3
-    |_ -> F1 str
+    |_ -> F1 
 
 
 [<EntryPoint>]
