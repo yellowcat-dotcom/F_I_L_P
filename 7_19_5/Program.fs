@@ -1,5 +1,4 @@
-﻿
-open System
+﻿open System
 
 let rec writeList = function
     [] ->   let z = System.Console.ReadKey()
@@ -7,6 +6,7 @@ let rec writeList = function
     | (head : int)::tail -> 
                        System.Console.WriteLine(head)
                        writeList tail
+
 // Перемешать символы в слове, кроме первого и последнего
 let F1 str =
     let len = String.length str
@@ -62,28 +62,27 @@ let split (s:string) =
     cutWords s []
 
 
-//let sort l =List.sortBy(fun x -> x.Length()) l
+let sort l = List.sortBy(fun (x:string) -> x.Length) l
+    
 
-//let F3 str =
-    //let a = split str
-
+let F3 str =
+    let a = split str
+    let b = sort a
+    b|> String.concat " "
+    
   
 let menu = function    
     | 1 -> F1 
     | 2 -> F2
-    //| 3 -> F3  
+    | 3 -> F3  
 
 [<EntryPoint>]
 let main argv =
     System.Console.WriteLine("Введите строку: ")
     let str = Console.ReadLine()
-    (*System.Console.WriteLine("Введите номер задачи:
+    System.Console.WriteLine("Введите номер задачи:
     1)Перемешивание символов в случайном порядке
     2)Проверка на палиндром
     3)Упорядочивание по колличеству букв в слове")
-    Console.ReadLine()|> Int32.Parse |> menu <|str|> printfn "Результат: %s" *)
-    let a = split str
-   // let b = sortByCount a
-    printfn "%A" (b)
-    
+    Console.ReadLine()|> Int32.Parse |> menu <|str|> printfn "Результат: %s"        
     0 
