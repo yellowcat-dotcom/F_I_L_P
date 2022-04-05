@@ -34,7 +34,29 @@ let writeArray arr =
             w arr nextind
     w arr 0
 
+let maxASCII (str:string) =
+    let rec m index (count:int) =
+        match index with
+        | index when index >= str.Length - 1 -> count
+        |_ ->
+            let newCount = if (str.[index] |> Convert.ToInt32)  > count then (str.[index] |> Convert.ToInt32) else count
+            let newIndex = index + 1
+            m newIndex newCount
+    m 0 ('A' |> Convert.ToInt32)
+    
+let sumRazn (str:string) =
+    let rec s index index2 count =
+        match index with
+        | index when index2 <= index -> count
+        |_ ->
+            let newCount = (str.[index] |> Convert.ToInt32) - (str.[index2] |> Convert.ToInt32) + count
+            let newIndex = index + 1
+            let newIndex2 = index2 - 1
+            s newIndex  newIndex2 newCount
+    s 0 ((str.Length) - 1) 0
 
+let metod2 list =
+    Array.ofList(List.sortBy (fun (x:string) -> (maxASCII x - sumRazn x)*(maxASCII x - sumRazn x) ) list)
 
 
 let z n str =
