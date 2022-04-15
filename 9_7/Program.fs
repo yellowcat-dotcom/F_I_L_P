@@ -16,7 +16,7 @@ let chekBox1 = new CheckBox(Left=40, Top=40, Width=20, Height=20)
 form.Controls.Add(chekBox1)
 let chekBox2 = new CheckBox(Left=130, Top=40, Width=20, Height=20)
 form.Controls.Add(chekBox2)
-let p _ = F (System.Convert.ToBoolean(chekBox1.ThreeState),System.Convert.ToBoolean(chekBox2.ThreeState))
+let p _ = F (System.Convert.ToBoolean(chekBox1.CheckState),System.Convert.ToBoolean(chekBox2.CheckState))
 let _ = button1.Click.Add(p)
 
 do Application.Run(form)
